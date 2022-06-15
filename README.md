@@ -1,26 +1,24 @@
-# LAB - Class xx
+# LAB - Class 42
 
-## Project: Project Name Here
+## Project: Pythonisms
 
-## Author: Student/Group Name
+## Author: James Brooks
 
-## Links and Resources
+## Findings
 
-- back-end server url (when applicable)
-- front-end application (when applicable)
+- Through this assignment I have found the most use out of the dunder methods as I can see how they could be of the most use. The use of the `__iter__` dunder with a generator in particular allowing for a for/in loop to work with the data structure is one that would be quite useful.
+  - I chose to implement the following dunders into a copy of the Stack code;
+    - Iteration through `__iter__` and a Generator
+    - A string representation through `__str__`
+    - A length of it through modifying the push/pop methods and adding a length attribute and returning it under the `__len__` dunder
+    - Capability of comparing if two stacks are equal through `__eq__`
+    - Can get a specific element by providing an index number through `__getitem__`
+    - Make the class Truthy/Falsy with `__bool__`
 
-## Setup
-
-- .env requirements (where applicable) i.e.
-  - PORT - Port Number
-  - DATABASE_URL - URL to the running Postgres instance/db
-
-- How to initialize/run your application (where applicable)
-  - e.g. python main.py
-- How to use your library (where applicable)
-
-## Tests
-
-- How do you run tests?
-- Any tests of note?
-- Describe any tests that you did not complete, skipped, etc
+- As for the decorators, I can definitely see some of the uses, especially in a testing format but to see the full potential of it's uses I would likely need a decent chunk of time working with them to see what they can truly do.
+  - I created decorators to;
+    - Time the function through the `time` import.
+    - Slow the function down by 1 second with `sleep` import.
+    - Take the output of a function and make a 1 element list from it.
+    - Convert the output of a function to a string.
+    - Validate the first input type by printing the type of the first arg.
